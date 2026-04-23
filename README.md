@@ -1,5 +1,14 @@
 # Upskill - Auto-Learn Capabilities from Package Registries
 
+Marketplace-compatible skill collection layout:
+
+```
+skills/
+└── upskill/
+    ├── SKILL.md
+    └── README.md
+```
+
 Meta-skill that enables Claude Code to teach itself new tools by searching NPM and pip registries, installing packages globally, and generating skill documentation automatically.
 
 ## What It Does
@@ -257,11 +266,10 @@ curl "https://pypi.org/pypi/<package-name>/json"
     └── package-versions.json
 ```
 
-## Related Files
+## Repository Files
 
-- `SKILL.md` - Main skill documentation (loaded into context)
-- `metadata.json` - Machine-readable package metadata
-- `full-docs.md` - Complete API reference (if needed)
+- `skills/upskill/SKILL.md` - Main skill documentation (loaded into context)
+- `skills/upskill/README.md` - Human-readable companion documentation
 
 ## Version Cache Format
 
